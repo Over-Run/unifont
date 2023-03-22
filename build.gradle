@@ -66,6 +66,7 @@ sourcesJar {
     dependsOn classes
     archiveClassifier.set 'sources'
     from sourceSets.main.allSource, 'LICENSE'
+    exclude 'assets/*'
 }
 
 javadocJar {
