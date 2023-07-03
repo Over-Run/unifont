@@ -6,7 +6,7 @@ This “library” binds the baked bitmap of Unifont, so we don’t need to add 
 
 ```groovy
 dependencies {
-    implementation "io.github.over-run:unifont:15.0.03"
+    implementation "io.github.over-run:unifont:15.0.06"
 }
 ```
 
