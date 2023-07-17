@@ -55,7 +55,7 @@ jar {
     manifest.attributes(
         'Specification-Title': projName,
         'Specification-Vendor': orgName,
-        'Specification-Version': '0',
+        'Specification-Version': '1',
         'Implementation-Title': projName,
         'Implementation-Vendor': orgName,
         'Implementation-Version': archiveVersion

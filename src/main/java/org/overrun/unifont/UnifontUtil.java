@@ -20,7 +20,7 @@ package org.overrun.unifont;
  * The utilities of Unifont.
  *
  * @author squid233
- * @since 0.1.0
+ * @since 15.0.01.1
  */
 public final class UnifontUtil {
     /**
