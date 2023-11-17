@@ -41,6 +41,10 @@ public final class UnifontUtil {
     public static final int IMAGE_SIZE = 4096;
     private static final float INV_IMAGE_SIZE = 1.0f / IMAGE_SIZE;
 
+    private UnifontUtil() {
+        //no instance
+    }
+
     /**
      * Gets the x advance for the given codepoint.
      *
@@ -49,6 +53,7 @@ public final class UnifontUtil {
      */
     public static int xAdvance(int codePoint) {
         if (codePoint >= ' ' && codePoint <= '~') return 8;
+        // ZWNJ
         if (codePoint == 0x200C) return 0;
         return 16;
     }

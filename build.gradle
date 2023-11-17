@@ -103,11 +103,8 @@ publishing.publications {
             developers {
                 String[] prop = (project.developers as String).split(',')
                 for (String s : prop) {
-                    String[] dev = s.split(':', 3)
                     developer {
-                        id.set dev[0]
-                        name.set dev[1]
-                        email.set dev[2]
+                        id.set s
                     }
                 }
             }

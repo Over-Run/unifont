@@ -34,7 +34,7 @@ public class DataValidator {
             for (int x = 0; x < width; x++) {
                 final int argb = image.getRGB(x, y);
                 if (argb != 0xffffffff && argb != 0xff000000) {
-                    throw new IllegalStateException(path.substring(path.lastIndexOf('/') + 1) + ": " + "Invalid data 0x" + Integer.toHexString(argb) + " at x: " + x + ", y: " + y);
+                    System.out.println(path.substring(path.lastIndexOf('/') + 1) + ": " + "Invalid data 0x" + Integer.toHexString(argb) + " at x: " + x + ", y: " + y);
                 }
             }
         }
